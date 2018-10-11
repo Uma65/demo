@@ -1,1 +1,4 @@
-hie
+This is our first sample project.
+It includes only Text files as it is a Demo
+I'm  beginner.
+It's really excited to learn different technologies like this with the help of Guider.
