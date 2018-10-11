@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.demo.bean.College;
+import com.example.demo.bean.DataDemo;
 import com.example.demo.bean.Employee;
 import com.example.demo.bean.Student;
 import com.example.demo.service.DemoService;
@@ -39,5 +41,16 @@ public class DemoController {
 	public Employee getEmployee(@RequestParam Integer id) {
 		
 		return demoService.getEmployee(id);
+	}
+	
+	@GetMapping("getCollege")
+	public College getCollege(@RequestParam Integer id) {
+		
+		return demoService.getCollege(id);
+	}
+	@PostMapping("getData")
+	public DataDemo getDataDemoPost(@RequestBody DataDemo details) {
+		return details;
+		
 	}
 }
